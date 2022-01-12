@@ -44,6 +44,6 @@ ADD https://github.com/magento/magento2-sample-data/archive/refs/tags/2.4.2.tar.
 
 RUN chmod +x install_magento.sh
 
-CMD ["bash", "install_magento.sh"]
+ENTRYPOINT ["bash", "install_magento.sh"]
 
 EXPOSE 80
